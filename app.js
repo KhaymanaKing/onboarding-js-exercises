@@ -6,7 +6,9 @@
 // a number of minutes as an argument and returns
 // the number of seconds
 
-function convertToSeconds(minutes, seconds) {
+function convertToSeconds(minutes) {
+    return minutes *= 60;
+    
 }
 
 console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
@@ -14,7 +16,9 @@ console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
 // 2. areaOfTriangle
 // Write a function called areaOfTriangle that takes in the base and height
 // of a triangle and returns its area
-function areaOfTriangle() {}
+function areaOfTriangle(height, base) {
+    height
+}
 console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
 
 // 3. lessThan100
@@ -82,4 +86,3 @@ console.log(`daysInMonth(11) === 30: ${daysInMonth(11) === 30}`);
 // - [Reversed Strings](https://www.codewars.com/kata/5168bb5dfe9a00b126000018)
 // - [Is it a Palindrome?](https://www.codewars.com/kata/57a1fd2ce298a731b20006a4)
 // - [Numerical Palindrome](https://www.codewars.com/kata/58ba6fece3614ba7c200017f)
-// - [Disemvowel Trolls](https://www.codewars.com/kata/52fba66badcd10859f00097e)
