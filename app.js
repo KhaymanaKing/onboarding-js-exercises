@@ -40,7 +40,7 @@ console.log(`lessThan100(100, 10) === false : ${lessThan100(100, 10) === false}`
 // The function should return a string with the first, middle and last names
 function getFormattedName(first_name, last_name, middle_name = '') {
     if (middle_name === '') {
-        return '${first_name} ${last_name}';
+        return `${first_name} ${last_name}`;
     } else {
         return first_name + ' ' + middle_name + ' ' + last_name;
     }
@@ -67,13 +67,13 @@ console.log(
 //    that checks if the year is a leap year, and returns the correct
 //    number of days for Feb. The default value for the year should be
 //    the current year
-function daysInMonth(month, year = '2020') {
+let amountOfDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+let amountOfDaysLeapYear = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+function daysInMonth(month, year = '2022') {
     if (month >= 1 && month <= 12) {
-        return new Date(year, month, 0).getDate();
-    } else { console.log('Not a value of 1 through 12');
-        
+         
+        return amountOfDays [month - 1];
     }
-
 }
 console.log(`daysInMonth(2) === 29: ${daysInMonth(2) === 29}`);
 console.log(`daysInMonth(3) === 31: ${daysInMonth(3) === 31}`);
