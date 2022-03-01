@@ -17,7 +17,7 @@ console.log(`convertToSeconds(10) === 600 : ${convertToSeconds(10) === 600}`);
 // Write a function called areaOfTriangle that takes in the base and height
 // of a triangle and returns its area
 function areaOfTriangle(height, base) {
-    height
+    return height * base / 2; 
 }
 console.log(`areaOfTriangle(5, 10) === 25 : ${areaOfTriangle(5, 10) === 25}`);
 
@@ -42,7 +42,7 @@ function getFormattedName(first_name, last_name, middle_name = '') {
     if (middle_name === '') {
         return '${first_name} ${last_name}';
     } else {
-        return first_name + '' + middle_name + ''+ last_name;
+        return first_name + ' ' + middle_name + ' ' + last_name;
     }
     
 }
