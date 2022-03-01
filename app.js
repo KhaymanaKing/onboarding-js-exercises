@@ -67,11 +67,9 @@ console.log(
 //    that checks if the year is a leap year, and returns the correct
 //    number of days for Feb. The default value for the year should be
 //    the current year
-let amountOfDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-let amountOfDaysLeapYear = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+let amountOfDays = [31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
 function daysInMonth(month, year = '2022') {
     if (month >= 1 && month <= 12) {
-         
         return amountOfDays [month - 1];
     }
 }
